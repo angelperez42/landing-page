@@ -97,8 +97,18 @@ html {
   color: #fff;
 }
 
+.header-logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
 .main {
   padding: 50px;
+}
+
+.sec-text {
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
 .heading ul {
@@ -122,6 +132,12 @@ li {
   justify-content: center;
   align-items: center;
   padding: 50px;
+}
+
+.random-info-section h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
 }
 
 .random-info-container {
@@ -154,12 +170,27 @@ li {
 }
 
 .sign-up-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
   margin: 50px;
   padding: 20px;
+  background-color: #3882f6;
+  color: #fff;
 }
 
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #1f2937;
+  color: #fff;
+}
+
+button {
+  background-color: #3882f6;
+  border: solid 1px #fff;
+  color: #fff;
+  padding: 4px 16px;
 }
