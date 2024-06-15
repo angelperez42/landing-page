@@ -90,11 +90,24 @@ html {
   
 /* Fonts-end */
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-box {
+  display: flex;
+  justify-content: center;
+  background-color: #1f2937;
+  color: #fff;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
-  background-color: #1f2937;
-  color: #fff;
+  width: 900px;
+
 }
 
 .header-logo {
@@ -102,13 +115,47 @@ html {
   color: #f9faf8;
 }
 
-.main {
-  padding: 50px;
-}
 
 .sec-text {
   font-size: 18px;
   color: #e5e7eb;
+}
+
+.heading {
+  padding-top: 25px;
+}
+
+.hero-subheading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+  gap: 50px;
+}
+
+.main {
+  padding: 50px 0px;
+  flex: 1 1 0;
+}
+
+.main h1 {
+  font-size: 48px;
+}
+
+.main .sec-text {
+  margin: 15px 0;
+}
+
+.placeholder {
+  flex: 1 1 0;
+}
+
+.placeholder p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(220, 13%, 92%, 0.56);
+  padding: 100px 50px;
 }
 
 .heading ul {
@@ -131,18 +178,31 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 50px 220px 150px;
 }
 
 .random-info-section h2 {
   font-size: 36px;
   font-weight: 900;
   color: #1f2937;
+  margin-bottom: 50px;
 }
 
 .random-info-container {
   display: flex;
-  gap: 20px;
+  gap: 50px;
+}
+
+.random-info-container div {
+  border: 3px solid #3882f6;
+  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.random-info-container figcaption {
+  text-align: center;
 }
 
 .quote-container {
@@ -150,8 +210,16 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 120px;
   background-color: #e5e7eb;
+}
+
+.quote-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
 }
 
 .quote-container p {
@@ -165,17 +233,18 @@ li {
 
 .sign-up-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .sign-up-box {
   display: flex;
-  justify-content: space-around;
+  width: 900px;
+  justify-content: space-between;
   align-items: center;
-  gap: 50px;
-  margin: 50px;
-  padding: 20px;
+  margin: 80px 0px;
+  padding: 50px 90px;
+  border-radius: 6px;
   background-color: #3882f6;
   color: #fff;
 }
@@ -186,11 +255,20 @@ li {
   align-items: center;
   background-color: #1f2937;
   color: #fff;
+  padding: 30px;
 }
 
 button {
   background-color: #3882f6;
-  border: solid 1px #fff;
   color: #fff;
-  padding: 4px 16px;
+  padding: 8px 27px;
+  border-radius: 6px;
+}
+
+button.no-border {
+  border: solid 1px #1f2937;
+}
+
+button.white-border {
+  border: solid 1px #fff;
 }
